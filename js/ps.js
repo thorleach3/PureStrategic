@@ -27,8 +27,11 @@ var relatedProductArray = [
 
 function adjustQty(n){
     var qty = document.getElementById("productQty").value;
+    var price = document.getElementById("productQty").getAttribute("data-price");
     qty = parseInt(qty) + parseInt(n);
     document.getElementById("productQty").value = qty;
+    price = parseInt(price) * qty;
+    document.getElementById("bigProductPrice").innerHTML = price;
 }
 
 function loadArray(array,id){
