@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <title>Product</title>
+        <link rel="stylesheet" type="text/css" href="css/ps.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div id="pageHeader">
+            <div id="smallHeader" class="letter-container">
+                <div>
+                    <a href="mailto:info@shopy.com" style="margin:10px;"><img class="iconImg" src="images/mail.png">info@shopy.com</a>
+                    <a href="tel:4535553996"><img class="iconImg" src="images/phone.png">453 - 5553 - 996</a>
+                </div>
+                <div>
+                    <a class="socialLink" href="//www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a class="socialLink" href="//plus.google.com"><i class="fab fa-google-plus-g"></i></a>
+                    <a class="socialLink" href="//twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a class="socialLink" href="//facebook.com"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            
+            <hr>
+
+            <div id="bigHeader">
+                <div class="letter-container">
+                    <div style="flex-grow: 1;">
+                        <img src="images/logo.png"/>
+                    </div>
+                    <div style="flex-grow: 1;">
+                        <a class="navLink" href="#home">Home</a>
+                        <a class="navLink active" href="#products">Products</a>
+                        <a class="navLink" href="#deals">Hot Deals</a>
+                        <a class="navLink" href="#about">About</a>
+                        <a class="navLink" href="#contact">Contact</a>
+                    </div>
+                    <div style="flex-grow: 4;text-align:right;">
+                        <i class="accountLink material-icons" style="position:relative;left:20px;top:2px;">search</i>
+                        <a class="accountLink" style="position:relative;left:20px;"><img src="images/user.png"/></a>
+                        <a class="accountLink" id="shoppingBasket"><img src="images/basket.png"/></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div id="product" class="flex-container" style="margin-bottom: 30px;margin-top: 30px;">
+            <div id="productImage" style="padding:10px;">
+                <div id="bigProduct">
+                    <img src="images/bigProduct.jpg"/>
+                </div>
+                <div class="h75">
+                    <img class="h75" id="product1" src="images/product1.jpg"/>
+                    <img class="h75" id="product2" src="images/product2.jpg"/>
+                    <img class="h75" id="smallProduct" src="images/smallProductAlt.jpg"/>
+                </div>
+            </div>
+            <div id="productDetails" style="padding:10px;">
+                <h1 class="accent" style="font-size: 36px;"><strong>Full Winter Kit</strong></h2>
+                <h4>Half Jacket + Skiny Trousers + Boot Leather</h4>
+                <p>Lorem Ipsum is sikmply dummy text of the printing and typesetting industry</p>
+                <p>Lorem Ipsum is sikmply dummy text of the printing</p>
+                <p>and typesetting industry</p>
+                <hr>
+
+                <div class="letter-container">
+                    <div>
+                        <span style="margin-right:10px;">Choose Size</span>
+                        <a>S</a>-<a>M</a>-<a class="active selected">L</a>-<a>XL</a>
+                    </div>
+                    <div>
+                        <span style="margin-right:10px;">Choose Quantity</span>
+                        <a onclick="adjustQty(1)">+</a><input id="productQty" class="active" readonly value=3 placeholder="qty"><a onclick="adjustQty(-1)">-</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="letter-container">
+                    <strong>Price: <span id="bigProductPrice">120</span>$</strong> 
+                    <span>
+                        <a class="mar">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                        <a class="mar">
+                            <i class="fas fa-cart-plus"></i>
+                        </a>
+                        <a class="mar">
+                            <i class="far fa-heart"></i>
+                        </a>
+                        <button onclick="orderNow()" class="orderNowButton">Order Now</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="relatedProducts" class="contrast" style="padding-bottom: 20px;">
+            <div class="centerText">
+                <h2>Related Products</h2>
+                <p>Lorem Ipsum is sikmply dummy text of the printing and typesetting industry</p>
+            </div>
+            <div id="rpContainer" class="flex-container"></div>
+            <div id="newsLetter" class="letter-container" style="background-color:white;">
+                <div>
+                    <span class="accent">News Letter</span>
+                    <span class="note" style="margin-left: 10px;">join us now to get all news and special offers</span>
+                </div>
+                <div>
+                    <span class="note">
+                        <img class="iconImg" src="images/mail.png">
+                        <input class="noBorder" type="email" placeholder="type your email here">
+                    </span>
+                </div>
+                <div>
+                    <button class="joinNowButton">Join Us</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id="footer" class="letter-container footer">
+                <img style="margin-right:20%;" src="images/logo.png"/>
+                <div>
+                    <div style="display: inline-block;">
+                        <ul>
+                            <li><a href="#feed">our feed</a></li>
+                            <li><a href="#terms">terms and conditions</a></li>
+                            <li><a href="#privacy">our privacy</a></li>
+                        </ul>
+                    </div>
+                    <div style="display:inline-block;vertical-align:text-bottom;">
+                        <ul>
+                            <li><a href="#join">join us</a></li>
+                            <li><a href="#support">live support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="paymentType">
+                    <div>
+                        <span class="accent" style="text-transform: initial;">Payment Methods</span>
+                    </div>
+                    <div>
+                        <img class="ccImg" src="images/creditcards/amex.png">
+                        <img class="ccImg" src="images/creditcards/discover.png">
+                        <img class="ccImg" src="images/creditcards/visa.png">
+                        <img class="ccImg" src="images/creditcards/mastercard.png">
+                        <img class="ccImg" src="images/creditcards/diners.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/ps.js"/></script>
+    </body>
+
+</html>
